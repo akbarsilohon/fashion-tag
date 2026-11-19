@@ -7,3 +7,5 @@ add_action('admin_menu', function(){
     add_submenu_page( 'fash', 'Styling', 'Styling', 'manage_options', 'fash-styling', 'fash_styling_func' );
     add_submenu_page( 'fash', 'Ads.txt', 'Ads.txt', 'manage_options', 'fash-ads-txt', 'fash_ads_text_func' );
 });
+
+require_once FASH_DIR . '/admin/pages/root-panel.php';

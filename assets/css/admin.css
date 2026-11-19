@@ -1,4 +1,4 @@
-.nx-option{
+.fash-option{
     width: 100%;
     max-width: 900px;
     margin: 1.5rem auto;
@@ -7,31 +7,31 @@
     background: #fff;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
-.nx-header{
+.fash-header{
     position: relative;
     color: #fff;
-    background: linear-gradient(135deg, #6a5cff, #8f44fd, #4facfe);
+    background: linear-gradient(135deg, #C4B7B1, #966859, #453229);
     padding: 20px;
 }
-.nx-header::before{
+.fash-header::before{
     content: "";
     position: absolute;
     inset: 0;
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(6px);
 }
-.nx-header_inner{
+.fash-header_inner{
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.nx-header_left{
+.fash-header_left{
     display: flex;
     align-items: center;
     gap: 15px;
 }
-.nx-logo{
+.fash-logo{
     width: 70px;
     height: 70px;
     object-fit: contain;
@@ -39,44 +39,44 @@
     background: #fff;
     padding: 8px;
 }
-.nx-header_text h2{
+.fash-header_text h2{
     margin: 0;
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: 600;
 }
-.nx-header_text p{
+.fash-header_text p{
     margin: 2px 0;
     font-size: 12px;
     opacity: 0.8;
 }
-.nx-header_text a{
+.fash-header_text a{
     font-size: 12px;
     color: #fff;
     text-decoration: none;
     opacity: 0.9;
 }
-.nx-header_text a:hover{
+.fash-header_text a:hover{
     text-decoration: underline;
 }
-.nx-header_right{
+.fash-header_right{
     display: flex;
     gap: 10px;
     align-items: center;
 }
-.nx-badge{
+.fash-badge{
     background: rgba(255,255,255,0.15);
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 12px;
 }
-.nx-status{
+.fash-status{
     background: #00d084;
     padding: 5px 10px;
     border-radius: 20px;
     font-size: 12px;
 }
-.nx-header_menu{
+.fash-header_menu{
     position: relative;
     margin-top: 15px;
     display: flex;
@@ -84,7 +84,7 @@
     border-top: 1px solid rgba(255,255,255,0.2);
     padding-top: 10px;
 }
-.nx-header_menu a{
+.fash-header_menu a{
     padding: 8px 14px;
     border-radius: 8px;
     text-decoration: none;
@@ -93,41 +93,41 @@
     opacity: 0.85;
     transition: all 0.25s ease;
 }
-.nx-header_menu a:hover{
+.fash-header_menu a:hover{
     background: rgba(255,255,255,0.15);
     opacity: 1;
 }
-.nx-header_menu a.active{
+.fash-header_menu a.active{
     background: #fff;
     color: #6a5cff;
     font-weight: 600;
 }
-.nx-form{
+.fash-form{
     margin-top: 20px;
 }
-.nx-card{
+.fash-card{
     background: #fff;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.06);
 }
-.nx-card_title{
+.fash-card_title{
     margin-bottom: 15px;
     font-size: 16px;
     font-weight: 600;
 }
-.nx-field{
+.fash-field{
     margin-bottom: 15px;
 }
-.nx-field label{
+.fash-field label{
     display: block;
     margin-bottom: 6px;
     font-size: 13px;
     font-weight: 500;
 }
-.nx-field input,
-.nx-field textarea{
+.fash-field input,
+.fash-field textarea{
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -135,34 +135,34 @@
     font-size: 13px;
     transition: 0.2s;
 }
-.nx-field input:focus,
-.nx-field textarea:focus{
+.fash-field input:focus,
+.fash-field textarea:focus{
     border-color: #6a5cff;
     box-shadow: 0 0 0 2px rgba(106,92,255,0.1);
     outline: none;
 }
-.nx-inline{
+.fash-inline{
     display: flex;
     gap: 10px;
 }
-.nx-inline input{
+.fash-inline input{
     flex: 1;
 }
-.nx-grid-2{
+.fash-grid-2{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
 }
-.nx-code{
+.fash-code{
     font-family: monospace;
     min-height: 120px;
     background: #0f172a;
     color: #e2e8f0;
 }
-.nx-submit{
+.fash-submit{
     text-align: right;
 }
-.nx-save{
+.fash-save{
     padding: 8px 20px;
     border-radius: 8px;
     background: linear-gradient(135deg, #6a5cff, #8f44fd);
@@ -171,7 +171,7 @@
     cursor: pointer;
     color: #fff;
 }
-.nx_reset_color{
+.fash_reset_color{
     padding: 8px 20px;
     border-radius: 8px;
     background: linear-gradient(135deg, #601212, #ea4141);
@@ -180,7 +180,7 @@
     cursor: pointer;
     color: #fff;
 }
-.nx-upload{
+.fash-upload{
     border-radius: 8px;
     background: linear-gradient(135deg, #6a5cff, #8f44fd);
     border: none;
@@ -190,7 +190,7 @@
 }
 
 /* COLOR PICKER FIX */
-.nx-field input[type="color"]{
+.fash-field input[type="color"]{
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
@@ -202,44 +202,44 @@
     cursor: pointer;
 }
 
-.nx-field input[type="color"]::-webkit-color-swatch-wrapper{
+.fash-field input[type="color"]::-webkit-color-swatch-wrapper{
     padding: 0;
     border-radius: 8px;
 }
 
-.nx-field input[type="color"]::-webkit-color-swatch{
+.fash-field input[type="color"]::-webkit-color-swatch{
     border: none;
     border-radius: 8px;
 }
-.nx-field input[type="color"]::-moz-color-swatch{
+.fash-field input[type="color"]::-moz-color-swatch{
     border: none;
     border-radius: 8px;
 }
-.nx-field input[type="color"]:hover{
+.fash-field input[type="color"]:hover{
     border-color: var(--nex-main-color);
 }
-.nx-field input[type="color"]:focus{
+.fash-field input[type="color"]:focus{
     outline: none;
     border-color: var(--nex-main-color);
     box-shadow: 0 0 0 2px rgba(123,63,228,0.15);
 }
-.nx-field input[type="color"]{
+.fash-field input[type="color"]{
     max-width: 60px;
     height: 40px;
     padding: 2px;
 }
-.nx-field.nxcolor{
+.fash-field.fashcolor{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nx-field.nxcolor label{
+.fash-field.fashcolor label{
     margin-bottom: 0;
 }
 
 /* Notice */
-.nxnotice{
+.fashnotice{
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -248,7 +248,7 @@
     font-family: sans-serif;
 }
 
-.nxnotice-inner{
+.fashnotice-inner{
     background: #fff;
     border-radius: 14px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.15);
@@ -257,7 +257,7 @@
 }
 
 /* HEADER */
-.nxnotice-header{
+.fashnotice-header{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -266,30 +266,30 @@
     position: relative;
 }
 
-.nxnotice-logo{
+.fashnotice-logo{
     width: 32px;
     height: 32px;
     border-radius: 8px;
     object-fit: cover;
 }
 
-.nxnotice-title{
+.fashnotice-title{
     display: flex;
     flex-direction: column;
     font-size: 12px;
     line-height: 1.2;
 }
 
-.nxnotice-title strong{
+.fashnotice-title strong{
     font-size: 13px;
 }
 
-.nxnotice-title span{
+.fashnotice-title span{
     color: #888;
 }
 
 /* CLOSE BUTTON */
-.nxnotice-close{
+.fashnotice-close{
     position: absolute;
     right: 10px;
     top: 8px;
@@ -300,28 +300,28 @@
     color: #888;
 }
 
-.nxnotice-close:hover{
+.fashnotice-close:hover{
     color: #000;
 }
 
 /* BODY */
-.nxnotice-body{
+.fashnotice-body{
     padding: 15px;
 }
 
-.nxnotice-body h3{
+.fashnotice-body h3{
     margin: 0 0 5px;
     font-size: 16px;
 }
 
-.nxnotice-body p{
+.fashnotice-body p{
     margin: 0;
     font-size: 13px;
     color: #555;
 }
 
 /* WRAPPER */
-.nxmodal{
+.fashmodal{
     position: fixed;
     inset: 0;
     z-index: 999999;
@@ -331,7 +331,7 @@
 }
 
 /* DARK BACKGROUND */
-.nxmodal-overlay{
+.fashmodal-overlay{
     position: absolute;
     inset: 0;
     background: rgba(0,0,0,0.6);
@@ -339,7 +339,7 @@
 }
 
 /* CARD */
-.nxmodal-card{
+.fashmodal-card{
     position: relative;
     width: 100%;
     max-width: 420px;
@@ -348,53 +348,53 @@
     padding: 25px;
     z-index: 2;
     box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-    animation: nxFadeUp 0.35s ease;
+    animation: fashFadeUp 0.35s ease;
 }
 
 /* HEADER */
-.nxmodal-header{
+.fashmodal-header{
     text-align: center;
     margin-bottom: 20px;
 }
 
-.nxmodal-logo{
+.fashmodal-logo{
     width: 60px;
     margin-bottom: 10px;
 }
 
-.nxmodal-header h2{
+.fashmodal-header h2{
     margin: 0;
     font-size: 20px;
 }
 
-.nxmodal-header span{
+.fashmodal-header span{
     font-size: 12px;
     color: #888;
 }
 
 /* BODY */
-.nxmodal-body{
+.fashmodal-body{
     text-align: center;
 }
 
-.nxmodal-body h3{
+.fashmodal-body h3{
     margin-bottom: 10px;
 }
 
-.nxmodal-body p{
+.fashmodal-body p{
     font-size: 14px;
     color: #555;
 }
 
 /* BUTTONS */
-.nxmodal-actions{
+.fashmodal-actions{
     margin-top: 20px;
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-.nxmodal-btn{
+.fashmodal-btn{
     padding: 10px 18px;
     border-radius: 8px;
     border: none;
@@ -402,21 +402,21 @@
     font-size: 13px;
 }
 
-.nxmodal-btn.primary{
+.fashmodal-btn.primary{
     background: #7b3fe4;
     color: #fff;
 }
 
-.nxmodal-btn.primary:hover{
+.fashmodal-btn.primary:hover{
     background: #692fd0;
 }
 
-.nxmodal-btn.ghost{
+.fashmodal-btn.ghost{
     background: #eee;
 }
 
 /* CLOSE */
-.nxmodal-close{
+.fashmodal-close{
     position: absolute;
     top: 10px;
     right: 12px;
@@ -427,12 +427,12 @@
     color: #999;
 }
 
-.nxmodal-close:hover{
+.fashmodal-close:hover{
     color: #000;
 }
 
 /* ANIMATION */
-@keyframes nxFadeUp{
+@keyframes fashFadeUp{
     from{
         opacity: 0;
         transform: translateY(20px);
