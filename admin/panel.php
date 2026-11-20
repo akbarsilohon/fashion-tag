@@ -9,3 +9,5 @@ add_action('admin_menu', function(){
 });
 
 require_once FASH_DIR . '/admin/pages/root-panel.php';
+require_once FASH_DIR . '/admin/pages/styling-page.php';
+require_once FASH_DIR . '/admin/pages/ads-txt.php';
