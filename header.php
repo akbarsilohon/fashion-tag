@@ -16,7 +16,7 @@ $logo = isset( $option['header_logo']) && !empty($option['header_logo'])
 <header class="fash_header">
     <div class="header_inner">
         <a href="<?php bloginfo('url'); ?>" class="fash_brand_link">
-            <img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>" width="300" height="40" class="fash_brand_image">
+            <img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>" width="300" height="40" loading="eager" class="fash_brand_image">
         </a>
 
         <div class="fash_menu_primary">
