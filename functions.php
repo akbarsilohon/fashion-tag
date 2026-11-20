@@ -13,3 +13,6 @@ require_once FASH_DIR . '/inc/func/enqueues.php';
 
 // Upstreaming admin function =====================
 require_once FASH_DIR . '/admin/panel.php';
+
+// Upstreaming widgets function ===================
+require_once FASH_DIR . '/inc/widgets/footer-widget.php';
