@@ -28,7 +28,6 @@ $youtube = isset($option['youtube']) && !empty($option['youtube'])
 
 <footer class="fash_footer">
     <div class="footer_inner">
-
         <div class="footer_main">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="footer_home_link">
                 <img

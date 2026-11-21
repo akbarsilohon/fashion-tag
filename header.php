@@ -45,7 +45,7 @@ $logo = isset( $option['header_logo']) && !empty($option['header_logo'])
     </div>
     <div class="fash_flx_body">
         <form action="<?php echo home_url('/'); ?>" method="get" class="fash_flx_search">
-            <input type="text" name="s" id="flx_input_search" placeholder="Cari artikel atau produk.." required />
+            <input type="text" name="s" id="flx_input_search" placeholder="Cari artikel atau produk.." value="<?php echo $s; ?>" autocomplete="off" required />
             <button type="submit" class="nx_flx-btn">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
