@@ -320,6 +320,113 @@ img{
     vertical-align: 4px;
 }
 
+/* Halaman 404 Fashion Tag ============ */
+.fash_404_box {
+    text-align: center;
+    padding: 70px 20px;
+}
+.fash_404_title {
+    font-size: clamp(80px, 15vw, 150px);
+    line-height: 1;
+    font-weight: 800;
+    margin: 0 0 15px;
+    color: var(--fash-body-text);
+}
+.fash_404_sub_title {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 700;
+    margin: 0 0 12px;
+    color: var(--fash-muted-text);
+}
+
+.fash_404_desc {
+    max-width: 550px;
+    margin: 0 auto 25px;
+    color: var(--fash-muted-text);
+    line-height: 1.7;
+}
+.fash_action_404 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background: var(--fash-btn-bg);
+    color: var(--fash-btn-text);
+    text-decoration: none;
+    font-size: 14px;
+    transition: background .25s ease, transform .25s ease;
+}
+.fash_action_404:hover {
+    background: var(--fash-btn-hover);
+    transform: translateY(-2px);
+}
+.fash_404_recent_post {
+    padding: 20px 0 60px;
+}
+.fash_404_section_title {
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--fash-body-text);
+    margin-bottom: 22px;
+}
+.fash_404_loop_posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+.fash_404_article {
+    min-width: 0;
+    overflow: hidden;
+}
+.fash_404_thumb_link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    border-radius: 8px;
+    background: #f2f2f2;
+}
+
+.fash_404_thumb_link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .35s ease;
+}
+.fash_404_article:hover .fash_404_thumb_link img {
+    transform: scale(1.05);
+}
+.fash_404_thumb_link .fashlist-no-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #aaa;
+    font-size: 32px;
+}
+.fash_404_content {
+    padding-top: 12px;
+}
+.fash_404_post_title {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0;
+}
+.fash_404_post_title a {
+    color: #222;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+.fash_404_post_title a:hover {
+    color: #777;
+}
+
 
 /* Footer Container
 ===================================== */
@@ -462,6 +569,9 @@ img{
     .fash_all_footer_widgets{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
+    .fash_404_loop_posts{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(max-width:540px){
@@ -470,5 +580,8 @@ img{
     }
     .fash_all_footer_widgets{
         gap: 3rem;
+    }
+    .fash_404_loop_posts{
+        grid-template-columns: 1fr;
     }
 }
