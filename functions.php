@@ -20,3 +20,5 @@ require_once FASH_DIR . '/inc/widgets/sidebar-widgets.php';
 
 // Upstreaming Ajax Load more Function ============
 require_once FASH_DIR . '/inc/ajax/homepage.php';
+require_once FASH_DIR . '/inc/ajax/category-ajax.php';
+require_once FASH_DIR . '/inc/ajax/tag-ajax.php';
