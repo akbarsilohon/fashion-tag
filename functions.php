@@ -17,3 +17,6 @@ require_once FASH_DIR . '/admin/panel.php';
 // Upstreaming widgets function ===================
 require_once FASH_DIR . '/inc/widgets/footer-widget.php';
 require_once FASH_DIR . '/inc/widgets/sidebar-widgets.php';
+
+// Upstreaming Ajax Load more Function ============
+require_once FASH_DIR . '/inc/ajax/homepage.php';
