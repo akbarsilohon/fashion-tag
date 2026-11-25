@@ -6,25 +6,14 @@ add_action('wp_ajax_nopriv_fash_load_more', 'fash_load_more');
 
 function fash_load_more(){
 
-    $paged = isset($_POST['page']) ? absint($_POST['page']) : 0;
-
-    if($paged < 2){
-        wp_die();
-    }
-
+    $paged = isset($_POST['page']) ? intval($_POST['page']) : 1;
     $query = new WP_Query([
         'post_type'      => 'post',
-        'post_status'    => 'publish',
         'posts_per_page' => get_option('posts_per_page'),
         'paged'          => $paged
     ]);
 
     if($query->have_posts()){
-
-        $has_more = $paged < $query->max_num_pages;
-
-        header('X-Has-More: ' . ($has_more ? 'true' : 'false'));
-
         while($query->have_posts()){
             $query->the_post(); ?>
 
