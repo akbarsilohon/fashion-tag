@@ -23,3 +23,4 @@ require_once FASH_DIR . '/inc/ajax/homepage.php';
 require_once FASH_DIR . '/inc/ajax/category-ajax.php';
 require_once FASH_DIR . '/inc/ajax/tag-ajax.php';
 require_once FASH_DIR . '/inc/ajax/author-ajax.php';
+require_once FASH_DIR . '/inc/func/clases.php';

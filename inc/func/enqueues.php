@@ -31,6 +31,10 @@ add_action('wp_enqueue_scripts', function(){
         wp_enqueue_style( 'fash-not-singular', FASH_URI . '/assets/css/not-singular.css', array(), fileatime( FASH_DIR . '/assets/css/not-singular.css'), 'all' );
     }
 
+    if( is_singular()){
+        wp_enqueue_style( 'fash-singular', FASH_URI . '/assets/css/singular.css', array(), fileatime( FASH_DIR  . '/assets/css/singular.css'), 'all' );
+    }
+
     // Main Js ---------------------------------------
     wp_enqueue_script( 'fash-main-js', FASH_URI . '/assets/js/main.js', array(), fileatime(FASH_DIR . '/assets/js/main.js'), true );
 });
